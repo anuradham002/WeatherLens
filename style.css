@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Overlock');
+body {
+	background: #643a7a;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+	background-image: linear-gradient(to top, #40334f, #2f273c, #272232, #201c29);
+  color: #4b384c;
+  font-family: 'overlock', Helvetica, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+.search{
+    position: absolute;
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 570px;
+}
+.weather-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.weather-card h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.temperature {
+    font-size: 36px;
+    color: #ff5722;
+    margin: 10px 0;
+}
+.condition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.condition img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.hill-bg-1, .hill-bg-2, .hill-fg-1, .hill-fg-2, .hill-fg-3 {
+  position: absolute;
+  z-index: 2;
+  width: 337px;
+  height: 281px;
+  top: 201px;
+  left: -57px;
+  background: #503760;
+  border-radius: 50%;
+	box-shadow: -.5rem 0 .8rem rgba(0, 0, 0, .3);
+}
+
+.hill-bg-2 {
+  top: 177px;
+  left: 177px;
+}
+
+.hill-fg-1, .hill-fg-2, .hill-fg-3 {
+  background: #695b93;
+  top: 228px;
+  left: -137px;
+}
+
+.hill-fg-2 {
+  top: 251px;
+  left: 63px;
+}
+
+.hill-fg-3 {
+  top: 218px;
+  left: 292px;
+}
+
+.front {
+  position: absolute;
+  z-index: 10;
+  width: 400px;
+  height: 140px;
+  left: 0;
+  bottom: -53px;
+  background: #fff;
+	box-shadow: -1rem 0 1rem rgba(0, 0, 0, .5);
+	animation: slide 1s;
+	transition: 1s ease-in-out;
+	z-index: 1000;
+	&:hover {
+		bottom: 0;
+	}
+}
+input {
+    padding: 10px 15px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+@keyframes slide {
+	0%, 45% {
+		transform: translateY(90px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+
+.front .wind {
+  float: left;
+  margin-left: 70px;
+  font-size: 20px;
+  line-height: 50px;
+}
+.front .humidity {
+  float: left;
+  margin-left: 70px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+@keyframes rise {
+  from {
+            transform: translate(-40px, 20px);
+  }
+  to {
+            transform: translate(0, 0px);
+  }
+}
+
+.proverb {
+	font-size: 1.3rem;
+	position: absolute;
+	top: 60%;
+	left: 0%;
+	text-align: center;
+	width: 100%;
+	padding: .5rem 0;
+	background: #d1baca;
+	height: 100%;
+}
